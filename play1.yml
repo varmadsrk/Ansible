@@ -1,0 +1,10 @@
+---
+- name: Convert ad hoc commands
+  hosts: remote
+  task: 
+   - name: Create a user
+     user:
+      name: devops-ansible
+      uid: 6000
+      state: present
+      comment: Created by ansible
