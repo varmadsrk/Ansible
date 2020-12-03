@@ -1,0 +1,14 @@
+---
+- name: example of using variable to user creation
+  hosts: remote
+  vars:
+   user_name: var-user
+   user-id: 7000
+   user_state: present
+  tasks:
+  - name: Create a user {{ user_name }}
+    user:
+     name: {{ user_name }}
+     uid: {{ user-id }}
+     state: {{ user_state }}
+     comment: Created by Ansible
