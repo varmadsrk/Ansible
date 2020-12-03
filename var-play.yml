@@ -8,7 +8,7 @@
   tasks:
   - name: Create a user {{ user_name }}
     user:
-     name: {{ user_name }}
-     uid: {{ user-id }}
-     state: {{ user_state }}
+     name: "{{ user_name }}"
+     uid: "{{ user-id }}"
+     state: "{{ user_state }}"
      comment: Created by Ansible
