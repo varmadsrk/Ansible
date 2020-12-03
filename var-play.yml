@@ -4,7 +4,7 @@
   vars:
    user_name: var-user
    user-id: 7000
-   user_state: present
+   user_state: presents
   tasks:
   - name: Create a user {{ user_name }}
     user:
